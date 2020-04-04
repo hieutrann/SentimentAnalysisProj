@@ -1,0 +1,83 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Style for sentiment display */
+
+.sentiment {
+    background-color: #eee;
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 1rem;
+}
+
+    .sentiment h4 {
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sentiment p {
+        font-size: 50px;
+    }
+
+    .sentiment .marker {
+        position: relative;
+        left: 22px;
+        width: calc(100% - 68px);
+    }
+
+        .sentiment .marker > div {
+            transition: 0.3s ease-in-out;
+            position: absolute;
+            margin-left: -30px;
+            text-align: center;
+        }
+
+            .sentiment .marker > div > div {
+                font-size: 50px;
+                line-height: 20px;
+                color: green;
+            }
+
+            .sentiment .marker > div label {
+                font-size: 30px;
+                color: gray;
+            }
